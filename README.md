@@ -8,7 +8,7 @@ GCam APK Finder is a React component that allows users to easily search for comp
 
 The package provides integration with [GCamAPK.io](https://gcamapk.io), the official website where users can find Google Camera ports APK for all Android phones.
 
-![GCam APK Finder Screenshot](https://raw.githubusercontent.com/download-now/gcam-apk-finder/main/screenshot.png)
+![GCam APK Finder Screenshot](https://raw.githubusercontent.com/download-now/GCam-APK-Finder/refs/heads/main/public/screenshot.png)
 
 ## Installation
 
