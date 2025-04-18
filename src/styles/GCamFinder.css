@@ -1,0 +1,286 @@
+.gcam-finder-container {
+  font-family: var(--font-family, Arial, sans-serif);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gcam-finder-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.gcam-finder-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.gcam-finder-search {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.gcam-finder-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius, 4px);
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
+
+.gcam-finder-search-button {
+  background-color: var(--primary-color, #4caf50);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius, 4px);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.gcam-finder-how-to {
+  margin-bottom: 20px;
+}
+
+.gcam-finder-how-to-button {
+  background-color: var(--primary-color, #4caf50);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius, 4px);
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.gcam-finder-brands-section {
+  margin-top: 20px;
+}
+
+.gcam-finder-brands-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.gcam-finder-brand-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gcam-finder-brand-button {
+  background-color: var(--secondary-color, #f5f5f5);
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: var(--border-radius, 4px);
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.gcam-finder-brand-button.selected {
+  background-color: var(--primary-color, #4caf50);
+  color: white;
+}
+
+.gcam-finder-loading {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+.gcam-finder-error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px;
+  border-radius: var(--border-radius, 4px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gcam-finder-results h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.gcam-finder-ports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gcam-finder-port-card {
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius, 4px);
+  padding: 15px;
+  background-color: white;
+}
+
+.gcam-finder-port-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.gcam-finder-port-version,
+.gcam-finder-port-author,
+.gcam-finder-port-size,
+.gcam-finder-port-date {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.gcam-finder-download-button {
+  display: block;
+  background-color: var(--primary-color, #4caf50);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: var(--border-radius, 4px);
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.gcam-finder-attribution {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.gcam-finder-attribution a {
+  color: var(--primary-color, #4caf50);
+  text-decoration: none;
+}
+
+/* Language Selector Styles */
+.gcam-finder-language-selector {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gcam-finder-language-button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: var(--border-radius, 4px);
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.gcam-finder-dropdown-arrow {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.gcam-finder-language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius, 4px);
+  z-index: 100;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gcam-finder-language-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.gcam-finder-language-option:hover {
+  background-color: #f5f5f5;
+}
+
+.gcam-finder-language-option.selected {
+  background-color: var(--primary-color, #4caf50);
+  color: white;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .gcam-finder-header h2 {
+    color: #f5f5f5;
+  }
+
+  .gcam-finder-brands-section h3 {
+    color: #f5f5f5;
+  }
+
+  .gcam-finder-results h3 {
+    color: #f5f5f5;
+  }
+
+  .gcam-finder-brand-button {
+    background-color: #333;
+    border-color: #444;
+    color: #f5f5f5;
+  }
+
+  .gcam-finder-port-card {
+    background-color: #2a2a2a;
+    border-color: #444;
+  }
+
+  .gcam-finder-port-card h4 {
+    color: #f5f5f5;
+  }
+
+  .gcam-finder-port-version,
+  .gcam-finder-port-author,
+  .gcam-finder-port-size,
+  .gcam-finder-port-date {
+    color: #ccc;
+  }
+
+  .gcam-finder-attribution {
+    color: #ccc;
+  }
+
+  .gcam-finder-language-button {
+    color: #f5f5f5;
+    border-color: #444;
+  }
+
+  .gcam-finder-language-dropdown {
+    background-color: #2a2a2a;
+    border-color: #444;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .gcam-finder-language-option {
+    color: #f5f5f5;
+  }
+
+  .gcam-finder-language-option:hover {
+    background-color: #333;
+  }
+}
